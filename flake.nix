@@ -7,7 +7,7 @@
       flake = false;
     };
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    treesitter-grammars.url = "github:kalin-p/nix-treesitter";
+    treesitter-grammars.url = "github:kalin-p/nix-treesitter/7f76f9f54407ae57c85655c2d09642e19810c52e";
   };
 
   outputs = { self, nixpkgs, emacs, treesitter-grammars }:
