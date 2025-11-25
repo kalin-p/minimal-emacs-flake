@@ -1,0 +1,95 @@
+{
+  "nodes": {
+    "conflake": {
+      "inputs": {
+        "nixpkgs": [
+          "treesitter-grammars",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1739025932,
+        "narHash": "sha256-8BbSpXfJfy3R7XYX43dQeYZJ7K+IDCfGZb1KgRHN0Pg=",
+        "owner": "ratson",
+        "repo": "conflake",
+        "rev": "69b5b014b79ecd457aa698e383602b07d52683c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ratson",
+        "repo": "conflake",
+        "type": "github"
+      }
+    },
+    "emacs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1755162243,
+        "narHash": "sha256-3Lfb3HqdlXqSnwJfxe7npa4GGR9djldy8bKRpkQCdSA=",
+        "type": "tarball",
+        "url": "https://cgit.git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-30.2.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://cgit.git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-30.2.tar.gz"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1763678758,
+        "narHash": "sha256-+hBiJ+kG5IoffUOdlANKFflTT5nO3FrrR2CA3178Y5s=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "117cc7f94e8072499b0a7aa4c52084fa4e11cc9b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1738958807,
+        "narHash": "sha256-h0WKgHTLkjwjRNTkqByQquS7N/15SqIFMQ356Ww8uCA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e8d0b02af0958823c955aaab3c82b03f54411d91",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "emacs": "emacs",
+        "nixpkgs": "nixpkgs",
+        "treesitter-grammars": "treesitter-grammars"
+      }
+    },
+    "treesitter-grammars": {
+      "inputs": {
+        "conflake": "conflake",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1763904926,
+        "narHash": "sha256-YLHyPjy6nhheJeBFaOdkpDrfEoUgUH13jAWeRpfWDfY=",
+        "path": "/home/kalin/flakes/nix-treesitter",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/kalin/flakes/nix-treesitter",
+        "type": "path"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
