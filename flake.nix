@@ -25,10 +25,10 @@
       ++ lib.optionals (stdenv.cc ? cc.lib.libgcc) [
         "${lib.getLib stdenv.cc.cc.lib.libgcc}/lib"
       ];
-
     in
       # versions of the stdenv GCC and libgccjit from nixpkgs must be the same
-      assert true -> (pkgs.stdenv.cc.cc.version == pkgs.libgccjit.version);
+      assert (pkgs.stdenv.cc.cc.version == pkgs.libgccjit.version);
+
       # TODO: look into whether a check should be put to determine if build
       # platform must be able to execute host platform or whatever they are
       # doing in the emacs package from nixpkgs
