@@ -7,7 +7,10 @@
       flake = false;
     };
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    treesitter-grammars.url = "github:kalin-p/nix-treesitter/39b550924b3a7f10885d8687a4a4b447976dfe3f";
+    treesitter-grammars = {
+      url = "github:kalin-p/nix-treesitter/39b550924b3a7f10885d8687a4a4b447976dfe3f";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, emacs, treesitter-grammars }:
